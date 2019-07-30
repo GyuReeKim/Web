@@ -1,0 +1,50 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+.blue {
+    background-color: blue;
+    position: static;
+}
+
+.red {
+    background-color: red;
+    position: relative;
+    /* static기준으로 자신의 원래 위치에서 왼쪽과 아래에 공백을 준다. */
+    left: 50px;
+    bottom: 50px;
+}
+
+.green {
+    background-color: green;
+    /* 빈 공간이 있음에도 원본이 있으므로 아래에 생성 */
+    /* 화면 창기준으로 생성 */
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.parent {
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+}
+
+.children {
+    /* div가 가지고있는 크기를 가져옴 */
+    background-color: pink;
+    position: absolute;
+    /* 왼쪽과 아래에 공백 */
+    left: 100px;
+    bottom: 100px;
+}
+
+.yellow {
+    background-color: yellow;
+    /* 스크롤을 내려도 따라온다. */
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}

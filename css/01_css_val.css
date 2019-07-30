@@ -1,0 +1,35 @@
+/* #으로 시작하는건 id이다!!! */
+#hello {
+    font-size: 50px;
+}
+
+#welcome {
+    font-size: 50%;
+}
+
+#lunch {
+    font-size: 0.5em;
+}
+
+#snack {
+    font-size: 0.5rem;
+}
+
+/* div는 부모 */
+div {
+    width: 50%;
+}
+
+/* h1은 자식,
+부모의 width를 상속받아서
+결국은 50% * 50% = 25%
+*/
+h1 {
+    width: 50%;
+}
+
+#menu {
+    background-color: lightpink;
+    width: 50vw;
+    height: 50vh;
+}
