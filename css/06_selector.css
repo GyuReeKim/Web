@@ -1,0 +1,48 @@
+/* '*'은 '모든 엘리먼트'를 뜻한다.
+* {
+    color: red;
+} */
+
+/* 태그 셀렉터 */
+/* important는 최우선순위! */
+h1 {
+    color: red !important;
+    background-color: black;
+}
+
+/* 그룹 */
+h1, h2 {
+    background-color: gray;
+}
+
+/* 클래스 */
+.class-selector {
+    color: blue;
+}
+
+/* 아이디 */
+#id-selector {
+    color: green;
+    background-color: blue;
+}
+
+/* 
+셀렉터들은 우선순위가 있다.
+id > class > tag
+*/
+
+/* 자식 셀렉터 */
+/* ul태그의 자식인 li만 변경해준다. */
+ul > li {
+    color: pink;
+}
+
+/* 바로 뒤에 인접한 형제. */
+p + li {
+    color: green;
+}
+
+/* 그 뒤로 쭉 형제 */
+p ~ li {
+    color: blue;
+}
